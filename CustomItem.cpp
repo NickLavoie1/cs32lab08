@@ -1,0 +1,29 @@
+#include "CustomItem.h"
+#include <math.h>
+
+CustomItem::CustomItem(std::string size) : IceCreamItem::IceCreamItem(size){
+  this->size = size;
+  if(size == "small")
+    price = 3.00;
+  else if(size == "medium")
+    price = 5.00;
+  else
+    price = 6.50;
+}
+
+CustomItem::~CustomItem(){
+
+}
+
+std::string CustomItem::composeItem()
+{
+  return "";
+}
+
+double CustomItem::getPrice(){
+  return price;
+}
+
+void CustomItem::addTopping(std::string topping){
+  return;
+}
